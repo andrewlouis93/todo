@@ -1,0 +1,38 @@
+<head>
+  <title>todo</title>
+
+  <!-- Bootstrap below! -->
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  {{> header}}
+  {{> search_bar}}
+  {{> list }}
+</body>
+
+<template name="header">
+  <h1 class="title">todo</h1>
+</template>
+
+<template name="search_bar">
+  <input type="text" class="search_bar form-control" placeholder="Your task here">
+</template>
+
+<template name="list">
+	<ul class="my_list list-group">
+	  {{#each task_list}}
+	  <li class="list-group-item">{{task_item}}}
+  	  	<span class="remove glyphicon glyphicon-remove"></span>
+	  </li>
+	  {{/each}}
+	</ul>
+</template>

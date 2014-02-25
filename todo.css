@@ -1,0 +1,37 @@
+/* CSS declarations go here */
+@font-face
+{
+	font-family: Helvetica;
+	src: url(../assets/Helvetica.ttf);
+}
+
+.title{
+	font-family: Helvetica;
+	text-align:center;
+	letter-spacing: -5px;
+	font-size:8em;
+	font-weight:bold;
+}
+
+.search_bar{
+	margin-left:auto;
+	margin-right:auto;
+	font-size:1.3em !important;
+	width: 40% !important;
+	min-width:400px;
+	height: 40px !important;
+}
+
+.my_list{
+	width: 600px;
+	margin-top: 50px;
+	max-height:350px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow-y:auto;
+}
+
+.remove{
+	cursor:pointer;
+	float:right;
+}
